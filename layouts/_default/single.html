@@ -35,7 +35,7 @@
       </div>
 
       <div class="post-content">
-        {{ .Content }}
+        {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
       </div>
     </div>
   </div>

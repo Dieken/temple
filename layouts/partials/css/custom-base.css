@@ -342,3 +342,9 @@ kbd, pre, code, samp {
     display: block;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
